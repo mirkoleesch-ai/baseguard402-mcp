@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baseguard402-mcp"
+version = "1.0.0"
+description = "MCP Server & x402 v2 client wrapper for BaseGuard402 — Base Mainnet USDC pay-per-call AI agent microservices (Token Security Audit, Web-to-Markdown, Base NFT Arbitrage & Valuation, Deep Research)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["x402", "mcp", "base", "usdc", "ai-agents", "coinbase", "micropayments", "defi", "nft", "security"]
+authors = [{ name = "BaseGuard402" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://x402.baseguard402.xyz"
+Repository = "https://github.com/mirkoleesch-ai/baseguard402-mcp"
+Discovery = "https://x402.baseguard402.xyz/.well-known/x402.json"
+
+[project.scripts]
+baseguard402-mcp = "baseguard402_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["baseguard402_mcp*"]
